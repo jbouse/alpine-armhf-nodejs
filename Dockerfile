@@ -7,6 +7,6 @@ ENV NPM_CONFIG_LOGLEVEL info
 RUN ["docker-build-start"]
 RUN apk add --no-cache nodejs \
 	&& npm config set registry http://registry.npmjs.org/
-RUN ["docker-build-start"]
+RUN ["docker-build-end"]
 
 CMD [ "node" ]
